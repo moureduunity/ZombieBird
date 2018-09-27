@@ -34,13 +34,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1035719321792614}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.11050129, y: 0.0016461611, z: -0.021216035}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: -31.7, y: -7.3013783, z: 3.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!198 &198709167739861788
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -173,8 +173,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 3
-      minScalar: 1.5
+      scalar: 6
+      minScalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -664,11 +664,11 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 5
     enabled: 1
-    type: 0
+    type: 4
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 0.1
+    radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
@@ -691,11 +691,11 @@ ParticleSystem:
     m_TextureColorAffectsParticles: 1
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
-    randomDirectionAmount: 0
-    sphericalDirectionAmount: 0
-    randomPositionAmount: 0
+    randomDirectionAmount: 1
+    sphericalDirectionAmount: 0.25
+    randomPositionAmount: 0.15
     radius:
-      value: 0.1
+      value: 0.5
       mode: 0
       spread: 0
       speed:
@@ -2400,7 +2400,7 @@ ParticleSystem:
     magnitude:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.001
       minScalar: 1
       maxCurve:
         serializedVersion: 2
